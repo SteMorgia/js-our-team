@@ -36,7 +36,7 @@ let team = [
             {
                 nome: 'Barbara Ramos',
                 posizione:'Graphic Designer',
-                immagine: 'barbara-ramos-graphic-designer.jpg'
+                immagine: 'barbara-ramos-graphic-designer.jpg',
             }
 
 
@@ -47,3 +47,12 @@ for (let key in team) {
     console.log(key);
     console.log(team[key]);
 }
+
+for (let i = 0; i < team.length; i++) {
+    document.createElement('div');
+    componenteDom. innerHTML += `<div>${team[i].nome}</div>`
+    componenteDom.innerHTML += `<div>${team[i].posizione}</div>`
+    componenteDom.innerHTML += `<div>${team[i].immagine}</div>`
+}
+
+
